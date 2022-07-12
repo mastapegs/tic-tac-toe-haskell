@@ -1,8 +1,7 @@
 module Main where
 
-import qualified MyLib (someFunc)
+import TicTacToe (sampleBoard, serializeBoard)
 
 main :: IO ()
 main = do
-  putStrLn "Hello, Haskell!"
-  MyLib.someFunc
+  putStrLn $ serializeBoard sampleBoard
